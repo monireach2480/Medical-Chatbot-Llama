@@ -1,0 +1,37 @@
+# === Project-specific ignores ===
+
+# Ignore ML models (large files)
+model/**
+!model/instruction.txt   # keep only small text instructions
+
+# Ignore datasets
+data/**
+!data/.gitkeep           # keep empty folder placeholder
+!data/*.txt              # allow small txt files like Medical_book.txt
+
+# Ignore research artifacts
+research/**
+
+# Ignore big binary weights/checkpoints (common extensions)
+*.bin
+*.ckpt
+*.pt
+*.pth
+*.h5
+*.npz
+*.tar
+*.gz
+*.zip
+
+# Ignore PDFs (if large)
+*.pdf
+
+# Ignore notebooks outputs
+*.ipynb_checkpoints
+*.nbconvert.ipynb
+
+# Keep documentation images
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
