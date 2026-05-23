@@ -1,8 +1,9 @@
 # === Project-specific ignores ===
 
 # Ignore ML models (large files)
-model/**
-!model/instruction.txt   # keep only small text instructions
+# model/**
+# !model/instruction.txt   
+# keep only small text instructions
 
 # Ignore datasets
 data/**
